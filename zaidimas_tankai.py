@@ -450,8 +450,12 @@ class Tankas:
 
     def kairen(self):
         print("Juda kairen")
-        if gridas[1] != "_" or gridas[9] != "_" or gridas[17] != "_" or gridas[25] != "_" or gridas[33] != "_" or \
-                gridas[41] != "_" or gridas[49] != "_" or gridas[57] != "_":
+        if gridas[1] == "←" or gridas[9] == "←" or gridas[17] == "←" or gridas[25] == "←" or gridas[33] == "←" or \
+           gridas[41] == "←" or gridas[49] == "←" or gridas[57] == "←" or \
+           gridas[1] == "↑" or gridas[9] == "↑" or gridas[17] == "↑" or gridas[25] == "↑" or gridas[33] == "↑" or \
+           gridas[41] == "↑" or gridas[49] == "↑" or gridas[57] == "↑" or \
+           gridas[1] == "↓" or gridas[9] == "↓" or gridas[17] == "↓" or gridas[25] == "↓" or gridas[33] == "↓" or \
+           gridas[41] == "↓" or gridas[49] == "↓" or gridas[57] == "↓":
             print("negalymas ejimas")
         else:
 
@@ -641,8 +645,14 @@ class Tankas:
 
     def desinen(self):
         print("Juda desinen")
-        if gridas[8] != "_" or gridas[16] != "_" or gridas[24] != "_" or gridas[32] != "_" or gridas[40] != "_" or \
-                gridas[48] != "_" or gridas[56] != "_" or gridas[64] != "_":
+
+        if gridas[8] == "→" or gridas[16] == "→" or gridas[24] == "→" or gridas[32] == "→" or gridas[40] == "→" or \
+                gridas[48] == "→" or gridas[56] == "→" or gridas[64] == "→" or \
+                gridas[8] == "↑" or gridas[16] == "↑" or gridas[24] == "↑" or gridas[32] == "↑" or gridas[40] == "↑" or \
+                gridas[48] == "↑" or gridas[56] == "↑" or gridas[64] == "↑" or \
+                gridas[8] == "↓" or gridas[16] == "↓" or gridas[24] == "↓" or gridas[32] == "↓" or gridas[40] == "↓" or \
+                gridas[48] == "↓" or gridas[56] == "↓" or gridas[64] == "↓":
+
             print("negalymas ejimas")
         else:
             # IS pirmo i antra stulpeli
@@ -1061,7 +1071,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1085,7 +1095,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1109,7 +1119,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1133,7 +1143,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1157,7 +1167,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1181,7 +1191,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[vieta] == "T":
+                                if gridas[saudom- 2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1205,7 +1215,7 @@ class Tankas:
                                 gridas[saudom] = "←"
                                 pass
                             else:
-                                if gridas[saudom] == "T":
+                                if gridas[saudom-2] == "T":
                                     taskai.append(100)
                                     print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                     pataike = True
@@ -1326,7 +1336,7 @@ class Tankas:
 
 def taikinys():
     # x=int(input("iveskite taikynio pozicija"))
-    x = random.randint(34, 39)
+    x = random.randint(2,64)
     gridas[x] = "T"
 
 
