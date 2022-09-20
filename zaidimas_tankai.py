@@ -44,13 +44,15 @@ gridas = ["_", "→", "_", "_", "_", "_", "_", "_", "_",
           "_", "_", "_", "_", "_", "_", "_", "_",
           "_", "_", "_", "_", "_", "_", "_", "_"]
 
-def generatorius(iteravimui, objektas):
+def generatorius(iteravimui, objektas, objektas2):
     # result = []
     for index, elem in enumerate(iteravimui):
-        if elem == objektas:
+        if elem == objektas or elem == objektas2:
             yield index
-idxs = generatorius(gridas, "_")
+idxs = generatorius(gridas, "_", "T")
 visi=list(idxs)
+
+
 print(visi)
 
 # def valom():
@@ -873,7 +875,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike=True
 
                                 time.sleep(2)
@@ -886,7 +888,7 @@ class Tankas:
                             spausdinam()
                     if pataike==False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
 
                 if vieta >= 9:
@@ -897,7 +899,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -909,7 +911,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 16:
                     for saudom in visi[vieta:24]:
@@ -919,7 +921,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -931,7 +933,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 24:
                     for saudom in visi[vieta:32]:
@@ -941,7 +943,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -953,7 +955,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 32:
                     for saudom in visi[vieta:40]:
@@ -963,7 +965,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -975,7 +977,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 40:
                     for saudom in visi[vieta:48]:
@@ -985,7 +987,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -997,7 +999,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 48:
                     for saudom in visi[vieta:56]:
@@ -1007,7 +1009,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -1019,7 +1021,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 if vieta >= 56:
                     for saudom in visi[vieta:64]:
@@ -1029,7 +1031,7 @@ class Tankas:
                         else:
                             if gridas[saudom] == "T":
                                 taskai.append(100)
-                                print(f"Pataikei! Jusu taskai {taskai}")
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
                                 pataike = True
                                 time.sleep(2)
                                 break
@@ -1041,7 +1043,7 @@ class Tankas:
                             spausdinam()
                     if pataike == False:
                         taskai.append(-10)
-                        print(f"Nepataikei! Jusu taskai {taskai}")
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
 
 
@@ -1053,103 +1055,206 @@ class Tankas:
 
             if judesys == "←":
                 vieta = gridas.index("←")
+                taikino_vieta = gridas.index("T")
+
                 suviai_i_kaire.append(1)
                 print("Saudo i kaire")
                 print(vieta)
+                print(taikino_vieta)
+                print(gridas[vieta])
+                print(gridas[taikino_vieta])
+
                 # Pirma eile
-                if vieta < 9:
+                if vieta < 10:
                     for saudom in visi[vieta::-1]:
                         if saudom == "←":
                             gridas[saudom] = "←"
                             pass
                         else:
+                            if gridas[saudom-2] == "T":
+                                taskai.append(100)
+                                print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom-2] = "*"
                             time.sleep(1)
                             spausdinam()
+                            kulkos_vieta = gridas.index("*")
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Antra eile
                 if vieta < 17:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 10:
+                        if saudom >= 11:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Trecia eile
                 if vieta < 25:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 18:
+                        if saudom >= 19:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom - 2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Ketvirta eile
                 if vieta < 33:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 26:
+                        if saudom >= 27:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Penkta eile
                 if vieta < 41:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 34:
+                        if saudom >= 35:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Sesta eile
                 if vieta < 49:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 42:
+                        if saudom >= 43:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Septinta eile
                 if vieta < 57:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 50:
+                        if saudom >= 51:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[vieta] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
                 # Astunta eile
                 if vieta < 65:
                     for saudom in visi[vieta::-1]:
-                        if saudom >= 58:
+                        if saudom >= 59:
                             if saudom == "←":
                                 gridas[saudom] = "←"
                                 pass
                             else:
+                                if gridas[saudom] == "T":
+                                    taskai.append(100)
+                                    print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                                    pataike = True
+                                    time.sleep(2)
+                                    break
+                                else:
+                                    pataike = False
+                                    pass
                                 gridas[saudom-2] = "*"
                                 time.sleep(1)
                                 spausdinam()
+                    if pataike == False:
+                        taskai.append(-10)
+                        print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
 
             if judesys == "↓":
@@ -1164,12 +1269,26 @@ class Tankas:
 
                         vieta+=8
                         pass
+                    if gridas[vieta] == "T":
+                        taskai.append(100)
+                        print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                        pataike = True
+                        time.sleep(2)
+                        break
+                    else:
+                        pataike = False
+                        pass
+
 
                     print(vieta)
                     gridas[vieta] = "*"
                     vieta += 8
                     time.sleep(1)
                     spausdinam()
+
+                if pataike == False:
+                    taskai.append(-10)
+                    print(f"Nepataikei! Jusu taskai {sum(taskai)}")
                 # if vieta < 65:
                 #     for saudom in visi[vieta:65]:
                 #         if saudom >= 0:
@@ -1193,12 +1312,25 @@ class Tankas:
                     if gridas[vieta] == "↑":
                         vieta -= 8
                         pass
+                    if gridas[vieta] == "T":
+                        taskai.append(100)
+                        print(f"Pataikei! Jusu taskai {sum(taskai)}")
+                        pataike = True
+                        time.sleep(2)
+                        break
+                    else:
+                        pataike = False
+                        pass
+
 
                     print(vieta)
                     gridas[vieta] = "*"
                     vieta -= 8
                     time.sleep(1)
                     spausdinam()
+                if pataike == False:
+                    taskai.append(-10)
+                    print(f"Nepataikei! Jusu taskai {sum(taskai)}")
 
         for valom in gridas:
             if valom == "→" or valom == "←" or valom == "↓" or valom == "↑":
@@ -1241,12 +1373,12 @@ class Tankas:
 
 def taikinys():
     # x=int(input("iveskite taikynio pozicija"))
-    x=random.randint(20,30)
+    x=random.randint(2,5)
     gridas[x]="T"
-    spausdinam()
+
 
 taikinys()
-
+spausdinam()
 
 # for elementas in gridas:
 #     elementas = "_"
@@ -1254,7 +1386,7 @@ taikinys()
 
 
 while True:
-    judejimas = input("""Kur vaziuojam? W - Virsun S - Zemyn A - Kairen D - Desinen SPACE - Saudyti\n""")
+    judejimas = input("""Kur vaziuojam?, W - Virsun, S - Zemyn, A - Kairen, D - Desinen, Enter - Saudyti\n""")
     tankas=Tankas()
     if judejimas == "w":
         tankas.virsun()
