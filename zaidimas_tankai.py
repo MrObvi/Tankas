@@ -1,4 +1,5 @@
 import time
+from random import randint
 # judejimas=0
 # ar_saudo=0
 
@@ -43,7 +44,7 @@ gridas = ["_", "→", "_", "_", "_", "_", "_", "_", "_",
           "_", "_", "_", "_", "_", "_", "_", "_"]
 
 def generatorius(iteravimui, objektas):
-    result = []
+    # result = []
     for index, elem in enumerate(iteravimui):
         if elem == objektas:
             yield index
@@ -93,184 +94,184 @@ class Tankas:
         #     print("negalymas ejimas")
 
         #IS ANTROS I PIRMA
-        if gridas[9] != "_":
+        if gridas[9] != "_" and gridas[9] != "T":
             gridas[1]="↑"
             gridas[9] = "_"
-        elif gridas[10] != "_":
+        elif gridas[10] != "_" and gridas[10] != "T":
             gridas[2]="↑"
             gridas[10] = "_"
-        elif gridas[11] != "_":
+        elif gridas[11] != "_" and gridas[11] != "T":
             gridas[3]="↑"
             gridas[11] = "_"
-        elif gridas[12] != "_":
+        elif gridas[12] != "_" and gridas[12] != "T":
             gridas[4]="↑"
             gridas[12] = "_"
-        elif gridas[13] != "_":
+        elif gridas[13] != "_" and gridas[13] != "T":
             gridas[5]="↑"
             gridas[13] = "_"
-        elif gridas[14] != "_":
+        elif gridas[14] != "_" and gridas[14] != "T":
             gridas[6]="↑"
             gridas[14] = "_"
-        elif gridas[15] != "_":
+        elif gridas[15] != "_" and gridas[15] != "T":
             gridas[7]="↑"
             gridas[15] = "_"
-        elif gridas[16] != "_":
+        elif gridas[16] != "_" and gridas[16] != "T":
             gridas[8]="↑"
             gridas[16] = "_"
 
         # IS Trecios I antra
-        elif gridas[17] != "_":
+        elif gridas[17] != "_" and gridas[17] != "T":
             gridas[9] = "↑"
             gridas[17] = "_"
-        elif gridas[18] != "_":
+        elif gridas[18] != "_" and gridas[18] != "T":
             gridas[10] = "↑"
             gridas[18] = "_"
-        elif gridas[19] != "_":
+        elif gridas[19] != "_" and gridas[19] != "T":
             gridas[11] = "↑"
             gridas[19] = "_"
-        elif gridas[20] != "_":
+        elif gridas[20] != "_" and gridas[20] != "T":
             gridas[12] = "↑"
             gridas[20] = "_"
-        elif gridas[21] != "_":
+        elif gridas[21] != "_" and gridas[21] != "T":
             gridas[13] = "↑"
             gridas[21] = "_"
-        elif gridas[22] != "_":
+        elif gridas[22] != "_" and gridas[22] != "T":
             gridas[14] = "↑"
             gridas[22] = "_"
-        elif gridas[23] != "_":
+        elif gridas[23] != "_" and gridas[23] != "T":
             gridas[15] = "↑"
             gridas[23] = "_"
-        elif gridas[24] != "_":
+        elif gridas[24] != "_" and gridas[24] != "T":
             gridas[16] = "↑"
             gridas[24] = "_"
 
         # IS ketvirtos I trecia
-        elif gridas[25] != "_":
+        elif gridas[25] != "_" and gridas[25] != "T":
             gridas[17]="↑"
             gridas[25] = "_"
-        elif gridas[26] != "_":
+        elif gridas[26] != "_" and gridas[26] != "T":
             gridas[18]="↑"
             gridas[26] = "_"
-        elif gridas[27] != "_":
+        elif gridas[27] != "_" and gridas[27] != "T":
             gridas[19]="↑"
             gridas[27] = "_"
-        elif gridas[28] != "_":
+        elif gridas[28] != "_" and gridas[28] != "T":
             gridas[20]="↑"
             gridas[28] = "_"
-        elif gridas[29] != "_":
+        elif gridas[29] != "_" and gridas[29] != "T":
             gridas[21]="↑"
             gridas[29] = "_"
-        elif gridas[30] != "_":
+        elif gridas[30] != "_" and gridas[30] != "T":
             gridas[22]="↑"
             gridas[30] = "_"
-        elif gridas[31] != "_":
+        elif gridas[31] != "_" and gridas[31] != "T":
             gridas[23]="↑"
             gridas[31] = "_"
-        elif gridas[32] != "_":
+        elif gridas[32] != "_" and gridas[32] != "T":
             gridas[24]="↑"
             gridas[32] = "_"
 
         # IS penktos I ketvirta
-        elif gridas[33] != "_":
+        elif gridas[33] != "_" and gridas[33] != "T":
             gridas[25]="↑"
             gridas[33] = "_"
-        elif gridas[34] != "_":
+        elif gridas[34] != "_" and gridas[34] != "T":
             gridas[26]="↑"
             gridas[34] = "_"
-        elif gridas[35] != "_":
+        elif gridas[35] != "_" and gridas[35] != "T":
             gridas[27]="↑"
             gridas[35] = "_"
-        elif gridas[36] != "_":
+        elif gridas[36] != "_" and gridas[36] != "T":
             gridas[28]="↑"
             gridas[36] = "_"
-        elif gridas[37] != "_":
+        elif gridas[37] != "_" and gridas[37] != "T":
             gridas[29]="↑"
             gridas[37] = "_"
-        elif gridas[38] != "_":
+        elif gridas[38] != "_" and gridas[38] != "T":
             gridas[30]="↑"
             gridas[38] = "_"
-        elif gridas[39] != "_":
+        elif gridas[39] != "_" and gridas[39] != "T":
             gridas[31]="↑"
             gridas[39] = "_"
-        elif gridas[40] != "_":
+        elif gridas[40] != "_" and gridas[40] != "T":
             gridas[32]="↑"
             gridas[40] = "_"
 
         # IS sestos I penkta
-        elif gridas[41] != "_":
+        elif gridas[41] != "_" and gridas[41] != "T":
             gridas[33]="↑"
             gridas[41] = "_"
-        elif gridas[42] != "_":
+        elif gridas[42] != "_" and gridas[42] != "T":
             gridas[34]="↑"
             gridas[42] = "_"
-        elif gridas[43] != "_":
+        elif gridas[43] != "_" and gridas[43] != "T":
             gridas[35]="↑"
             gridas[43] = "_"
-        elif gridas[44] != "_":
+        elif gridas[44] != "_" and gridas[44] != "T":
             gridas[36]="↑"
             gridas[44] = "_"
-        elif gridas[45] != "_":
+        elif gridas[45] != "_" and gridas[45] != "T":
             gridas[37]="↑"
             gridas[45] = "_"
-        elif gridas[46] != "_":
+        elif gridas[46] != "_" and gridas[46] != "T":
             gridas[38]="↑"
             gridas[46] = "_"
-        elif gridas[47] != "_":
+        elif gridas[47] != "_" and gridas[47] != "T":
             gridas[39]="↑"
             gridas[47] = "_"
-        elif gridas[48] != "_":
+        elif gridas[48] != "_" and gridas[48] != "T":
             gridas[40]="↑"
             gridas[48] = "_"
 
         # IS septinots I sesta
-        elif gridas[49] != "_":
+        elif gridas[49] != "_" and gridas[49] != "T":
             gridas[41]="↑"
             gridas[49] = "_"
-        elif gridas[50] != "_":
+        elif gridas[50] != "_" and gridas[50] != "T":
             gridas[42]="↑"
             gridas[50] = "_"
-        elif gridas[51] != "_":
+        elif gridas[51] != "_" and gridas[51] != "T":
             gridas[43]="↑"
             gridas[51] = "_"
-        elif gridas[52] != "_":
+        elif gridas[52] != "_" and gridas[52] != "T":
             gridas[44]="↑"
             gridas[52] = "_"
-        elif gridas[53] != "_":
+        elif gridas[53] != "_" and gridas[53] != "T":
             gridas[45]="↑"
             gridas[53] = "_"
-        elif gridas[54] != "_":
+        elif gridas[54] != "_" and gridas[54] != "T":
             gridas[46]="↑"
             gridas[54] = "_"
-        elif gridas[55] != "_":
+        elif gridas[55] != "_" and gridas[55] != "T":
             gridas[47]="↑"
             gridas[55] = "_"
-        elif gridas[56] != "_":
+        elif gridas[56] != "_" and gridas[56] != "T":
             gridas[48]="↑"
             gridas[56] = "_"
 
         # IS astuntos I septinta
-        elif gridas[57] != "_":
+        elif gridas[57] != "_" and gridas[57] != "T":
             gridas[49]="↑"
             gridas[57] = "_"
-        elif gridas[58] != "_":
+        elif gridas[58] != "_" and gridas[58] != "T":
             gridas[50]="↑"
             gridas[58] = "_"
-        elif gridas[59] != "_":
+        elif gridas[59] != "_" and gridas[59] != "T":
             gridas[51]="↑"
             gridas[59] = "_"
-        elif gridas[60] != "_":
+        elif gridas[60] != "_" and gridas[60] != "T":
             gridas[52]="↑"
             gridas[60] = "_"
-        elif gridas[61] != "_":
+        elif gridas[61] != "_" and gridas[61] != "T":
             gridas[53]="↑"
             gridas[61] = "_"
-        elif gridas[62] != "_":
+        elif gridas[62] != "_" and gridas[62] != "T":
             gridas[54]="↑"
             gridas[62] = "_"
-        elif gridas[63] != "_":
+        elif gridas[63] != "_" and gridas[63] != "T":
             gridas[55]="↑"
             gridas[63] = "_"
-        elif gridas[64] != "_":
+        elif gridas[64] != "_" and gridas[64] != "T":
             gridas[56]="↑"
             gridas[64] = "_"
 
@@ -287,184 +288,184 @@ class Tankas:
 
         # IS pirmos I antra
 
-        if gridas[1] != "_":
+        if gridas[1] != "_" and gridas[1] != "T":
             gridas[9] = "↓"
             gridas[1] = "_"
-        elif gridas[2] != "_":
+        elif gridas[2] != "_" and gridas[2] != "T":
             gridas[10] = "↓"
             gridas[2] = "_"
-        elif gridas[3] != "_":
+        elif gridas[3] != "_" and gridas[3] != "T":
             gridas[11] = "↓"
             gridas[3] = "_"
-        elif gridas[4] != "_":
+        elif gridas[4] != "_" and gridas[4] != "T":
             gridas[12] = "↓"
             gridas[4] = "_"
-        elif gridas[5] != "_":
+        elif gridas[5] != "_" and gridas[5] != "T":
             gridas[13] = "↓"
             gridas[5] = "_"
-        elif gridas[6] != "_":
+        elif gridas[6] != "_" and gridas[6] != "T":
             gridas[14] = "↓"
             gridas[6] = "_"
-        elif gridas[7] != "_":
+        elif gridas[7] != "_" and gridas[7] != "T":
             gridas[15] = "↓"
             gridas[7] = "_"
-        elif gridas[8] != "_":
+        elif gridas[8] != "_" and gridas[8] != "T":
             gridas[16] = "↓"
             gridas[8] = "_"
 
         # IS antros I trecia
-        elif gridas[9] != "_":
+        elif gridas[9] != "_" and gridas[9] != "T":
             gridas[17] = "↓"
             gridas[9] = "_"
-        elif gridas[10] != "_":
+        elif gridas[10] != "_" and gridas[10] != "T":
             gridas[18] = "↓"
             gridas[10] = "_"
-        elif gridas[11] != "_":
+        elif gridas[11] != "_" and gridas[11] != "T":
             gridas[19] = "↓"
             gridas[11] = "_"
-        elif gridas[12] != "_":
+        elif gridas[12] != "_" and gridas[12] != "T":
             gridas[20] = "↓"
             gridas[12] = "_"
-        elif gridas[13] != "_":
+        elif gridas[13] != "_" and gridas[13] != "T":
             gridas[21] = "↓"
             gridas[13] = "_"
-        elif gridas[14] != "_":
+        elif gridas[14] != "_" and gridas[14] != "T":
             gridas[22] = "↓"
             gridas[14] = "_"
-        elif gridas[15] != "_":
+        elif gridas[15] != "_" and gridas[15] != "T":
             gridas[23] = "↓"
             gridas[15] = "_"
-        elif gridas[16] != "_":
+        elif gridas[16] != "_" and gridas[16] != "T":
             gridas[24] = "↓"
             gridas[16] = "_"
 
         # IS trecios I ketvirta
-        elif gridas[17] != "_":
+        elif gridas[17] != "_" and gridas[17] != "T":
             gridas[25] = "↓"
             gridas[17] = "_"
-        elif gridas[18] != "_":
+        elif gridas[18] != "_" and gridas[18] != "T":
             gridas[26] = "↓"
             gridas[18] = "_"
-        elif gridas[19] != "_":
+        elif gridas[19] != "_" and gridas[19] != "T":
             gridas[27] = "↓"
             gridas[19] = "_"
-        elif gridas[20] != "_":
+        elif gridas[20] != "_" and gridas[20] != "T":
             gridas[28] = "↓"
             gridas[20] = "_"
-        elif gridas[21] != "_":
+        elif gridas[21] != "_" and gridas[21] != "T":
             gridas[29] = "↓"
             gridas[21] = "_"
-        elif gridas[22] != "_":
+        elif gridas[22] != "_" and gridas[22] != "T":
             gridas[30] = "↓"
             gridas[22] = "_"
-        elif gridas[23] != "_":
+        elif gridas[23] != "_" and gridas[23] != "T":
             gridas[31] = "↓"
             gridas[23] = "_"
-        elif gridas[24] != "_":
+        elif gridas[24] != "_" and gridas[24] != "T":
             gridas[32] = "↓"
             gridas[24] = "_"
 
         # IS ketvirtos I penkta
-        elif gridas[25] != "_":
+        elif gridas[25] != "_" and gridas[25] != "T":
             gridas[33] = "↓"
             gridas[25] = "_"
-        elif gridas[26] != "_":
+        elif gridas[26] != "_" and gridas[26] != "T":
             gridas[34] = "↓"
             gridas[26] = "_"
-        elif gridas[27] != "_":
+        elif gridas[27] != "_" and gridas[27] != "T":
             gridas[35] = "↓"
             gridas[27] = "_"
-        elif gridas[28] != "_":
+        elif gridas[28] != "_" and gridas[28] != "T":
             gridas[36] = "↓"
             gridas[28] = "_"
-        elif gridas[29] != "_":
+        elif gridas[29] != "_" and gridas[29] != "T":
             gridas[37] = "↓"
             gridas[29] = "_"
-        elif gridas[30] != "_":
+        elif gridas[30] != "_" and gridas[30] != "T":
             gridas[38] = "↓"
             gridas[30] = "_"
-        elif gridas[31] != "_":
+        elif gridas[31] != "_" and gridas[31] != "T":
             gridas[39] = "↓"
             gridas[31] = "_"
-        elif gridas[32] != "_":
+        elif gridas[32] != "_" and gridas[32] != "T":
             gridas[40] = "↓"
             gridas[32] = "_"
 
         # IS penktos I sesta
-        elif gridas[33] != "_":
+        elif gridas[33] != "_" and gridas[33] != "T":
             gridas[41] = "↓"
             gridas[33] = "_"
-        elif gridas[34] != "_":
+        elif gridas[34] != "_" and gridas[34] != "T":
             gridas[42] = "↓"
             gridas[34] = "_"
-        elif gridas[35] != "_":
+        elif gridas[35] != "_" and gridas[35] != "T":
             gridas[43] = "↓"
             gridas[35] = "_"
-        elif gridas[36] != "_":
+        elif gridas[36] != "_" and gridas[36] != "T":
             gridas[44] = "↓"
             gridas[36] = "_"
-        elif gridas[37] != "_":
+        elif gridas[37] != "_" and gridas[37] != "T":
             gridas[45] = "↓"
             gridas[37] = "_"
-        elif gridas[38] != "_":
+        elif gridas[38] != "_" and gridas[38] != "T":
             gridas[46] = "↓"
             gridas[38] = "_"
-        elif gridas[39] != "_":
+        elif gridas[39] != "_" and gridas[39] != "T":
             gridas[47] = "↓"
             gridas[39] = "_"
-        elif gridas[40] != "_":
+        elif gridas[40] != "_" and gridas[40] != "T":
             gridas[48] = "↓"
             gridas[40] = "_"
 
         # IS sestos I septinta
-        elif gridas[41] != "_":
+        elif gridas[41] != "_" and gridas[41] != "T":
             gridas[49] = "↓"
             gridas[41] = "_"
-        elif gridas[42] != "_":
+        elif gridas[42] != "_" and gridas[42] != "T":
             gridas[50] = "↓"
             gridas[42] = "_"
-        elif gridas[43] != "_":
+        elif gridas[43] != "_" and gridas[43] != "T":
             gridas[51] = "↓"
             gridas[43] = "_"
-        elif gridas[44] != "_":
+        elif gridas[44] != "_" and gridas[44] != "T":
             gridas[52] = "↓"
             gridas[44] = "_"
-        elif gridas[45] != "_":
+        elif gridas[45] != "_" and gridas[45] != "T":
             gridas[53] = "↓"
             gridas[45] = "_"
-        elif gridas[46] != "_":
+        elif gridas[46] != "_" and gridas[46] != "T":
             gridas[54] = "↓"
             gridas[46] = "_"
-        elif gridas[47] != "_":
+        elif gridas[47] != "_" and gridas[47] != "T":
             gridas[55] = "↓"
             gridas[47] = "_"
-        elif gridas[48] != "_":
+        elif gridas[48] != "_" and gridas[48] != "T":
             gridas[56] = "↓"
             gridas[48] = "_"
 
         # IS septintos I astunta
-        elif gridas[49] != "_":
+        elif gridas[49] != "_" and gridas[49] != "T":
             gridas[57] = "↓"
             gridas[49] = "_"
-        elif gridas[50] != "_":
+        elif gridas[50] != "_" and gridas[50] != "T":
             gridas[58] = "↓"
             gridas[50] = "_"
-        elif gridas[51] != "_":
+        elif gridas[51] != "_" and gridas[51] != "T":
             gridas[59] = "↓"
             gridas[51] = "_"
-        elif gridas[52] != "_":
+        elif gridas[52] != "_" and gridas[52] != "T":
             gridas[60] = "↓"
             gridas[52] = "_"
-        elif gridas[53] != "_":
+        elif gridas[53] != "_" and gridas[53] != "T":
             gridas[61] = "↓"
             gridas[53] = "_"
-        elif gridas[54] != "_":
+        elif gridas[54] != "_" and gridas[54] != "T":
             gridas[62] = "↓"
             gridas[54] = "_"
-        elif gridas[55] != "_":
+        elif gridas[55] != "_" and gridas[55] != "T":
             gridas[63] = "↓"
             gridas[55] = "_"
-        elif gridas[56] != "_":
+        elif gridas[56] != "_" and gridas[56] != "T":
             gridas[64] = "↓"
             gridas[56] = "_"
         spausdinam()
@@ -476,184 +477,184 @@ class Tankas:
         else:
 
             # IS astunto I septinta
-            if gridas[8] != "_":
+            if gridas[8] != "_" and gridas[8] != "T":
                 gridas[7] = "←"
                 gridas[8] = "_"
-            elif gridas[16] != "_":
+            elif gridas[16] != "_" and gridas[16] != "T":
                 gridas[15] = "←"
                 gridas[16] = "_"
-            elif gridas[24] != "_":
+            elif gridas[24] != "_" and gridas[24] != "T":
                 gridas[23] = "←"
                 gridas[24] = "_"
-            elif gridas[32] != "_":
+            elif gridas[32] != "_" and gridas[32] != "T":
                 gridas[31] = "←"
                 gridas[32] = "_"
-            elif gridas[40] != "_":
+            elif gridas[40] != "_" and gridas[40] != "T":
                 gridas[39] = "←"
                 gridas[40] = "_"
-            elif gridas[48] != "_":
+            elif gridas[48] != "_" and gridas[48] != "T":
                 gridas[47] = "←"
                 gridas[48] = "_"
-            elif gridas[56] != "_":
+            elif gridas[56] != "_" and gridas[56] != "T":
                 gridas[55] = "←"
                 gridas[56] = "_"
-            elif gridas[64] != "_":
+            elif gridas[64] != "_" and gridas[64] != "T":
                 gridas[63] = "←"
                 gridas[64] = "_"
             # IS septinto I sesta
 
-            elif gridas[7] != "_":
+            elif gridas[7] != "_" and gridas[7] != "T":
                 gridas[6] = "←"
                 gridas[7] = "_"
-            elif gridas[15] != "_":
+            elif gridas[15] != "_" and gridas[15] != "T":
                 gridas[14] = "←"
                 gridas[15] = "_"
-            elif gridas[23] != "_":
+            elif gridas[23] != "_" and gridas[23] != "T":
                 gridas[22] = "←"
                 gridas[23] = "_"
-            elif gridas[31] != "_":
+            elif gridas[31] != "_" and gridas[31] != "T":
                 gridas[30] = "←"
                 gridas[31] = "_"
-            elif gridas[39] != "_":
+            elif gridas[39] != "_" and gridas[39] != "T":
                 gridas[38] = "←"
                 gridas[39] = "_"
-            elif gridas[47] != "_":
+            elif gridas[47] != "_" and gridas[47] != "T":
                 gridas[46] = "←"
                 gridas[47] = "_"
-            elif gridas[55] != "_":
+            elif gridas[55] != "_" and gridas[55] != "T":
                 gridas[54] = "←"
                 gridas[55] = "_"
-            elif gridas[63] != "_":
+            elif gridas[63] != "_" and gridas[63] != "T":
                 gridas[62] = "←"
                 gridas[63] = "_"
 
             # IS sesto I penkta
-            elif gridas[6] != "_":
+            elif gridas[6] != "_" and gridas[6] != "T":
                 gridas[5] = "←"
                 gridas[6] = "_"
-            elif gridas[14] != "_":
+            elif gridas[14] != "_" and gridas[14] != "T":
                 gridas[13] = "←"
                 gridas[14] = "_"
-            elif gridas[22] != "_":
+            elif gridas[22] != "_" and gridas[22] != "T":
                 gridas[23] = "←"
                 gridas[22] = "_"
-            elif gridas[30] != "_":
+            elif gridas[30] != "_" and gridas[30] != "T":
                 gridas[29] = "←"
                 gridas[30] = "_"
-            elif gridas[38] != "_":
+            elif gridas[38] != "_" and gridas[38] != "T":
                 gridas[37] = "←"
                 gridas[38] = "_"
-            elif gridas[46] != "_":
+            elif gridas[46] != "_" and gridas[46] != "T":
                 gridas[45] = "←"
                 gridas[46] = "_"
-            elif gridas[54] != "_":
+            elif gridas[54] != "_" and gridas[54] != "T":
                 gridas[53] = "←"
                 gridas[54] = "_"
-            elif gridas[62] != "_":
+            elif gridas[62] != "_" and gridas[62] != "T":
                 gridas[61] = "←"
                 gridas[62] = "_"
 
             # IS penkto I ketvirta
-            elif gridas[5] != "_":
+            elif gridas[5] != "_" and gridas[5] != "T":
                 gridas[4] = "←"
                 gridas[5] = "_"
-            elif gridas[13] != "_":
+            elif gridas[13] != "_" and gridas[13] != "T":
                 gridas[12] = "←"
                 gridas[13] = "_"
-            elif gridas[23] != "_":
+            elif gridas[23] != "_" and gridas[23] != "T":
                 gridas[22] = "←"
                 gridas[23] = "_"
-            elif gridas[29] != "_":
+            elif gridas[29] != "_" and gridas[29] != "T":
                 gridas[28] = "←"
                 gridas[29] = "_"
-            elif gridas[37] != "_":
+            elif gridas[37] != "_" and gridas[37] != "T":
                 gridas[36] = "←"
                 gridas[37] = "_"
-            elif gridas[45] != "_":
+            elif gridas[45] != "_" and gridas[45] != "T":
                 gridas[44] = "←"
                 gridas[45] = "_"
-            elif gridas[53] != "_":
+            elif gridas[53] != "_" and gridas[53] != "T":
                 gridas[52] = "←"
                 gridas[53] = "_"
-            elif gridas[61] != "_":
+            elif gridas[61] != "_" and gridas[61] != "T":
                 gridas[60] = "←"
                 gridas[61] = "_"
 
             # IS ketvirto I trecia
-            elif gridas[4] != "_":
+            elif gridas[4] != "_" and gridas[4] != "T":
                 gridas[3] = "←"
                 gridas[4] = "_"
-            elif gridas[12] != "_":
+            elif gridas[12] != "_" and gridas[12] != "T":
                 gridas[11] = "←"
                 gridas[12] = "_"
-            elif gridas[22] != "_":
-                gridas[21] = "←"
-                gridas[22] = "_"
-            elif gridas[28] != "_":
+            elif gridas[20] != "_" and gridas[20] != "T":
+                gridas[19] = "←"
+                gridas[20] = "_"
+            elif gridas[28] != "_" and gridas[28] != "T":
                 gridas[27] = "←"
                 gridas[28] = "_"
-            elif gridas[36] != "_":
+            elif gridas[36] != "_" and gridas[36] != "T":
                 gridas[35] = "←"
                 gridas[36] = "_"
-            elif gridas[44] != "_":
+            elif gridas[44] != "_" and gridas[44] != "T":
                 gridas[43] = "←"
                 gridas[44] = "_"
-            elif gridas[52] != "_":
+            elif gridas[52] != "_" and gridas[52] != "T":
                 gridas[51] = "←"
                 gridas[52] = "_"
-            elif gridas[60] != "_":
+            elif gridas[60] != "_" and gridas[60] != "T":
                 gridas[59] = "←"
                 gridas[60] = "_"
 
             # IS trecio I antra
-            elif gridas[3] != "_":
+            elif gridas[3] != "_" and gridas[3] != "T":
                 gridas[2] = "←"
                 gridas[3] = "_"
-            elif gridas[11] != "_":
+            elif gridas[11] != "_" and gridas[11] != "T":
                 gridas[10] = "←"
                 gridas[11] = "_"
-            elif gridas[19] != "_":
+            elif gridas[19] != "_" and gridas[19] != "T":
                 gridas[18] = "←"
                 gridas[19] = "_"
-            elif gridas[27] != "_":
+            elif gridas[27] != "_" and gridas[27] != "T":
                 gridas[26] = "←"
                 gridas[27] = "_"
-            elif gridas[35] != "_":
+            elif gridas[35] != "_" and gridas[35] != "T":
                 gridas[34] = "←"
                 gridas[35] = "_"
-            elif gridas[43] != "_":
+            elif gridas[43] != "_" and gridas[43] != "T":
                 gridas[42] = "←"
                 gridas[43] = "_"
-            elif gridas[51] != "_":
+            elif gridas[51] != "_" and gridas[51] != "T":
                 gridas[50] = "←"
                 gridas[51] = "_"
-            elif gridas[59] != "_":
+            elif gridas[59] != "_" and gridas[59] != "T":
                 gridas[58] = "←"
                 gridas[59] = "_"
 
             # IS antro i pirma stulpeli
-            elif gridas[2] != "_":
+            elif gridas[2] != "_" and gridas[2] != "T":
                 gridas[1] = "←"
                 gridas[2] = "_"
-            elif gridas[10] != "_":
+            elif gridas[10] != "_" and gridas[10] != "T":
                 gridas[9] = "←"
                 gridas[10] = "_"
-            elif gridas[18] != "_":
+            elif gridas[18] != "_" and gridas[18] != "T":
                 gridas[17] = "←"
                 gridas[18] = "_"
-            elif gridas[26] != "_":
+            elif gridas[26] != "_" and gridas[26] != "T":
                 gridas[25] = "←"
                 gridas[26] = "_"
-            elif gridas[34] != "_":
+            elif gridas[34] != "_" and gridas[34] != "T":
                 gridas[33] = "←"
                 gridas[34] = "_"
-            elif gridas[42] != "_":
+            elif gridas[42] != "_" and gridas[42] != "T":
                 gridas[41] = "←"
                 gridas[42] = "_"
-            elif gridas[50] != "_":
+            elif gridas[50] != "_" and gridas[50] != "T":
                 gridas[49] = "←"
                 gridas[50] = "_"
-            elif gridas[58] != "_":
+            elif gridas[58] != "_" and gridas[58] != "T":
                 gridas[57] = "←"
                 gridas[58] = "_"
 
@@ -666,184 +667,184 @@ class Tankas:
             print("negalymas ejimas")
         else:
             # IS pirmo i antra stulpeli
-            if gridas[1] != "_":
+            if gridas[1] != "_" and gridas[1] != "T":
                 gridas[2] = "→"
                 gridas[1] = "_"
-            elif gridas[9] != "_":
+            elif gridas[9] != "_" and gridas[9] != "T":
                 gridas[10] = "→"
                 gridas[9] = "_"
-            elif gridas[17] != "_":
+            elif gridas[17] != "_" and gridas[17] != "T":
                 gridas[18] = "→"
                 gridas[17] = "_"
-            elif gridas[25] != "_":
+            elif gridas[25] != "_" and gridas[25] != "T":
                 gridas[26] = "→"
                 gridas[25] = "_"
-            elif gridas[33] != "_":
+            elif gridas[33] != "_" and gridas[33] != "T":
                 gridas[34] = "→"
                 gridas[33] = "_"
-            elif gridas[41] != "_":
+            elif gridas[41] != "_" and gridas[41] != "T":
                 gridas[42] = "→"
                 gridas[41] = "_"
-            elif gridas[49] != "_":
+            elif gridas[49] != "_" and gridas[49] != "T":
                 gridas[50] = "→"
                 gridas[49] = "_"
-            elif gridas[57] != "_":
+            elif gridas[57] != "_" and gridas[57] != "T":
                 gridas[58] = "→"
                 gridas[57] = "_"
 
             # IS antro I trecia
-            elif gridas[2] != "_":
+            elif gridas[2] != "_" and gridas[2] != "T":
                 gridas[3] = "→"
                 gridas[2] = "_"
-            elif gridas[10] != "_":
+            elif gridas[10] != "_" and gridas[10] != "T":
                 gridas[11] = "→"
                 gridas[10] = "_"
-            elif gridas[18] != "_":
+            elif gridas[18] != "_" and gridas[18] != "T":
                 gridas[19] = "→"
                 gridas[18] = "_"
-            elif gridas[26] != "_":
+            elif gridas[26] != "_" and gridas[26] != "T":
                 gridas[27] = "→"
                 gridas[26] = "_"
-            elif gridas[34] != "_":
+            elif gridas[34] != "_" and gridas[34] != "T":
                 gridas[35] = "→"
                 gridas[34] = "_"
-            elif gridas[42] != "_":
+            elif gridas[42] != "_" and gridas[42] != "T":
                 gridas[43] = "→"
                 gridas[42] = "_"
-            elif gridas[50] != "_":
+            elif gridas[50] != "_" and gridas[50] != "T":
                 gridas[51] = "→"
                 gridas[50] = "_"
-            elif gridas[58] != "_":
+            elif gridas[58] != "_" and gridas[58] != "T":
                 gridas[59] = "→"
                 gridas[58] = "_"
 
             # IS trecio I ketvirta
-            elif gridas[3] != "_":
+            elif gridas[3] != "_" and gridas[3] != "T":
                 gridas[4] = "→"
                 gridas[3] = "_"
-            elif gridas[11] != "_":
+            elif gridas[11] != "_" and gridas[11] != "T":
                 gridas[12] = "→"
                 gridas[11] = "_"
-            elif gridas[19] != "_":
+            elif gridas[19] != "_" and gridas[19] != "T":
                 gridas[20] = "→"
                 gridas[19] = "_"
-            elif gridas[27] != "_":
+            elif gridas[27] != "_" and gridas[27] != "T":
                 gridas[28] = "→"
                 gridas[27] = "_"
-            elif gridas[35] != "_":
+            elif gridas[35] != "_" and gridas[35] != "T":
                 gridas[36] = "→"
                 gridas[35] = "_"
-            elif gridas[43] != "_":
+            elif gridas[43] != "_" and gridas[43] != "T":
                 gridas[44] = "→"
                 gridas[43] = "_"
-            elif gridas[51] != "_":
+            elif gridas[51] != "_" and gridas[51] != "T":
                 gridas[52] = "→"
                 gridas[51] = "_"
-            elif gridas[59] != "_":
+            elif gridas[59] != "_" and gridas[59] != "T":
                 gridas[60] = "→"
                 gridas[59] = "_"
 
             # IS ketvirto I penkta
-            elif gridas[4] != "_":
+            elif gridas[4] != "_" and gridas[4] != "T":
                 gridas[5] = "→"
                 gridas[4] = "_"
-            elif gridas[12] != "_":
+            elif gridas[12] != "_" and gridas[12] != "T":
                 gridas[13] = "→"
                 gridas[12] = "_"
-            elif gridas[20] != "_":
+            elif gridas[20] != "_" and gridas[20] != "T":
                 gridas[21] = "→"
                 gridas[20] = "_"
-            elif gridas[28] != "_":
+            elif gridas[28] != "_" and gridas[28] != "T":
                 gridas[29] = "→"
                 gridas[28] = "_"
-            elif gridas[36] != "_":
+            elif gridas[36] != "_" and gridas[36] != "T":
                 gridas[37] = "→"
                 gridas[36] = "_"
-            elif gridas[44] != "_":
+            elif gridas[44] != "_" and gridas[44] != "T":
                 gridas[45] = "→"
                 gridas[44] = "_"
-            elif gridas[52] != "_":
+            elif gridas[52] != "_" and gridas[52] != "T":
                 gridas[53] = "→"
                 gridas[52] = "_"
-            elif gridas[60] != "_":
+            elif gridas[60] != "_" and gridas[60] != "T":
                 gridas[61] = "→"
                 gridas[60] = "_"
 
             # IS penktos I sesta
-            elif gridas[5] != "_":
+            elif gridas[5] != "_" and gridas[5] != "T":
                 gridas[6] = "→"
                 gridas[5] = "_"
-            elif gridas[13] != "_":
+            elif gridas[13] != "_" and gridas[13] != "T":
                 gridas[14] = "→"
                 gridas[13] = "_"
-            elif gridas[21] != "_":
+            elif gridas[21] != "_" and gridas[21] != "T":
                 gridas[22] = "→"
                 gridas[21] = "_"
-            elif gridas[29] != "_":
+            elif gridas[29] != "_" and gridas[29] != "T":
                 gridas[30] = "→"
                 gridas[29] = "_"
-            elif gridas[37] != "_":
+            elif gridas[37] != "_" and gridas[37] != "T":
                 gridas[38] = "→"
                 gridas[37] = "_"
-            elif gridas[45] != "_":
+            elif gridas[45] != "_" and gridas[45] != "T":
                 gridas[46] = "→"
                 gridas[45] = "_"
-            elif gridas[53] != "_":
+            elif gridas[53] != "_" and gridas[53] != "T":
                 gridas[54] = "→"
                 gridas[53] = "_"
-            elif gridas[61] != "_":
+            elif gridas[61] != "_" and gridas[61] != "T":
                 gridas[62] = "→"
                 gridas[61] = "_"
 
             # IS sestos I septinta
-            elif gridas[6] != "_":
+            elif gridas[6] != "_" and gridas[6] != "T":
                 gridas[7] = "→"
                 gridas[6] = "_"
-            elif gridas[14] != "_":
+            elif gridas[14] != "_" and gridas[14] != "T":
                 gridas[15] = "→"
                 gridas[14] = "_"
-            elif gridas[22] != "_":
+            elif gridas[22] != "_" and gridas[22] != "T":
                 gridas[23] = "→"
                 gridas[22] = "_"
-            elif gridas[30] != "_":
+            elif gridas[30] != "_" and gridas[30] != "T":
                 gridas[31] = "→"
                 gridas[30] = "_"
-            elif gridas[38] != "_":
+            elif gridas[38] != "_" and gridas[38] != "T":
                 gridas[39] = "→"
                 gridas[38] = "_"
-            elif gridas[46] != "_":
+            elif gridas[46] != "_" and gridas[46] != "T":
                 gridas[47] = "→"
                 gridas[46] = "_"
-            elif gridas[54] != "_":
+            elif gridas[54] != "_" and gridas[54] != "T":
                 gridas[55] = "→"
                 gridas[54] = "_"
-            elif gridas[62] != "_":
+            elif gridas[62] != "_" and gridas[62] != "T":
                 gridas[63] = "→"
                 gridas[62] = "_"
 
             # IS septintos I astunta
-            elif gridas[7] != "_":
+            elif gridas[7] != "_" and gridas[7] != "T":
                 gridas[8] = "→"
                 gridas[7] = "_"
-            elif gridas[15] != "_":
+            elif gridas[15] != "_" and gridas[15] != "T":
                 gridas[16] = "→"
                 gridas[15] = "_"
-            elif gridas[23] != "_":
+            elif gridas[23] != "_" and gridas[23] != "T":
                 gridas[24] = "→"
                 gridas[23] = "_"
-            elif gridas[31] != "_":
+            elif gridas[31] != "_" and gridas[31] != "T":
                 gridas[32] = "→"
                 gridas[31] = "_"
-            elif gridas[39] != "_":
+            elif gridas[39] != "_" and gridas[39] != "T":
                 gridas[40] = "→"
                 gridas[39] = "_"
-            elif gridas[47] != "_":
+            elif gridas[47] != "_" and gridas[47] != "T":
                 gridas[48] = "→"
                 gridas[47] = "_"
-            elif gridas[55] != "_":
+            elif gridas[55] != "_" and gridas[55] != "T":
                 gridas[56] = "→"
                 gridas[55] = "_"
-            elif gridas[63] != "_":
+            elif gridas[63] != "_" and gridas[63] != "T":
                 gridas[64] = "→"
                 gridas[63] = "_"
 
@@ -1113,6 +1114,8 @@ class Tankas:
         print(f"ISVISO SUVIU: {len(suviai_i_desine)+len(suviai_i_kaire)+len(suviai_i_virsu)+len(suviai_i_apacia)}")
 
         for pozicija in gridas:
+            if pozicija == "T":
+                print(f"Taikynio pozicija: {gridas.index(pozicija)}")
             if pozicija == "→" or pozicija == "←" or pozicija == "↓" or pozicija == "↑":
                 print(f"Tankas Pasisukes i: {pozicija}")
                 print(f"kordinates: {gridas.index(pozicija)}")
@@ -1120,6 +1123,12 @@ class Tankas:
                 pass
 
 
+def taikinys():
+    x=int(input("iveskite taikynio pozicija"))
+    gridas[x]="T"
+    spausdinam()
+
+taikinys()
 
 
 # for elementas in gridas:
