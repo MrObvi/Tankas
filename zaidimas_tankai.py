@@ -1,3 +1,4 @@
+import random
 import time
 from random import randint
 # judejimas=0
@@ -65,6 +66,8 @@ suviai_i_virsu=[]
 suviai_i_apacia=[]
 suviai_i_desine=[]
 suviai_i_kaire=[]
+taskai=0
+pataike=False
 
 class Tankas:
     # def __init__(self,judejimas,ar_saudo):
@@ -850,7 +853,7 @@ class Tankas:
 
         spausdinam()
 
-    def suvis(self):
+    def suvis(self,taskai, pataike):
         print("Saudom")
         # Gaunam kordinates tanko
 
@@ -860,6 +863,7 @@ class Tankas:
                 suviai_i_desine.append(1)
 
                 vieta = gridas.index("→")
+                prieso_vieta=gridas.index("T")
                 print("Saudo i desine")
                 if vieta < 9:
                     for saudom in visi[vieta:8]:
@@ -867,9 +871,22 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike=True
+
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike==False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
 
                 if vieta >= 9:
@@ -878,9 +895,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 16:
                     for saudom in visi[vieta:24]:
@@ -888,9 +917,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 24:
                     for saudom in visi[vieta:32]:
@@ -898,9 +939,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 32:
                     for saudom in visi[vieta:40]:
@@ -908,9 +961,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 40:
                     for saudom in visi[vieta:48]:
@@ -918,9 +983,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 48:
                     for saudom in visi[vieta:56]:
@@ -928,9 +1005,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 56:
                     for saudom in visi[vieta:64]:
@@ -938,9 +1027,21 @@ class Tankas:
                             gridas[saudom] = "→"
                             pass
                         else:
+                            if gridas[saudom] == "T":
+                                taskai += 100
+                                print(f"Pataikei! Jusu taskai {taskai}")
+                                pataike = True
+                                time.sleep(2)
+                                break
+                            else:
+                                pataike = False
+                                pass
                             gridas[saudom] = "*"
                             time.sleep(1)
                             spausdinam()
+                    if pataike == False:
+                        taskai -= 10
+                        print(f"Nepataikei! Jusu taskai {taskai}")
 
 
 
@@ -1102,8 +1203,23 @@ class Tankas:
         for valom in gridas:
             if valom == "→" or valom == "←" or valom == "↓" or valom == "↑":
                 continue
+            if pataike == True and valom =="T":
+                gridas[gridas.index(valom)] = "_"
+                taikinys()
+            else:
+                pass
+            for valom in gridas:
+                if valom == "*":
+                    gridas[gridas.index(valom)] = "_"
 
-            gridas[gridas.index(valom)] = "_"
+            # if valom =="T":
+            #     continue
+            # else:
+            #     taikinys()
+            #     break
+
+
+            # gridas[gridas.index(valom)] = "_"
 
         spausdinam()
 
@@ -1112,7 +1228,7 @@ class Tankas:
         print("info")
         print(f"Atlikti suviai i Desine: {len(suviai_i_desine)}, Kaire: {len(suviai_i_kaire)}, Virsu: {len(suviai_i_virsu)}, Apacia: {len(suviai_i_apacia)}")
         print(f"ISVISO SUVIU: {len(suviai_i_desine)+len(suviai_i_kaire)+len(suviai_i_virsu)+len(suviai_i_apacia)}")
-
+        print(f"Jusu taskai: {taskai}")
         for pozicija in gridas:
             if pozicija == "T":
                 print(f"Taikynio pozicija: {gridas.index(pozicija)}")
@@ -1124,7 +1240,8 @@ class Tankas:
 
 
 def taikinys():
-    x=int(input("iveskite taikynio pozicija"))
+    # x=int(input("iveskite taikynio pozicija"))
+    x=random.randint(20,30)
     gridas[x]="T"
     spausdinam()
 
@@ -1152,7 +1269,7 @@ while True:
         tankas.desinen()
         tankas.info()
     if judejimas == "":
-        tankas.suvis()
+        tankas.suvis(taskai, pataike)
         tankas.info()
 
 
