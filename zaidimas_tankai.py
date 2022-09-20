@@ -1109,13 +1109,12 @@ class Tankas:
 
     def info(self):
         print("info")
-        print(f"Atlikti suviai i desine: {len(suviai_i_desine)}")
-        print(f"Atlikti suviai i kaire: {len(suviai_i_kaire)}")
-        print(f"Atlikti suviai i virsu: {len(suviai_i_virsu)}")
-        print(f"Atlikti suviai i apacia: {len(suviai_i_apacia)}")
+        print(f"Atlikti suviai i Desine: {len(suviai_i_desine)}, Kaire: {len(suviai_i_kaire)}, Virsu: {len(suviai_i_virsu)}, Apacia: {len(suviai_i_apacia)}")
+        print(f"ISVISO SUVIU: {len(suviai_i_desine)+len(suviai_i_kaire)+len(suviai_i_virsu)+len(suviai_i_apacia)}")
+
         for pozicija in gridas:
             if pozicija == "→" or pozicija == "←" or pozicija == "↓" or pozicija == "↑":
-                print(f"Pasisukes i: {pozicija}")
+                print(f"Tankas Pasisukes i: {pozicija}")
                 print(f"kordinates: {gridas.index(pozicija)}")
             else:
                 pass
