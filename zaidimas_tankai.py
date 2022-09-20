@@ -1339,7 +1339,6 @@ def taikinys():
     x = random.randint(2,64)
     gridas[x] = "T"
 
-
 taikinys()
 spausdinam()
 
