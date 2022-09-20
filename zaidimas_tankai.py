@@ -66,7 +66,7 @@ suviai_i_virsu=[]
 suviai_i_apacia=[]
 suviai_i_desine=[]
 suviai_i_kaire=[]
-taskai=0
+taskai=[0]
 pataike=False
 
 class Tankas:
@@ -539,7 +539,7 @@ class Tankas:
                 gridas[13] = "←"
                 gridas[14] = "_"
             elif gridas[22] != "_" and gridas[22] != "T":
-                gridas[23] = "←"
+                gridas[21] = "←"
                 gridas[22] = "_"
             elif gridas[30] != "_" and gridas[30] != "T":
                 gridas[29] = "←"
@@ -872,7 +872,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike=True
 
@@ -885,7 +885,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike==False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
 
@@ -896,7 +896,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -908,7 +908,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 16:
@@ -918,7 +918,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -930,7 +930,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 24:
@@ -940,7 +940,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -952,7 +952,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 32:
@@ -962,7 +962,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -974,7 +974,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 40:
@@ -984,7 +984,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -996,7 +996,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 48:
@@ -1006,7 +1006,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -1018,7 +1018,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
                 if vieta >= 56:
@@ -1028,7 +1028,7 @@ class Tankas:
                             pass
                         else:
                             if gridas[saudom] == "T":
-                                taskai += 100
+                                taskai.append(100)
                                 print(f"Pataikei! Jusu taskai {taskai}")
                                 pataike = True
                                 time.sleep(2)
@@ -1040,7 +1040,7 @@ class Tankas:
                             time.sleep(1)
                             spausdinam()
                     if pataike == False:
-                        taskai -= 10
+                        taskai.append(-10)
                         print(f"Nepataikei! Jusu taskai {taskai}")
 
 
@@ -1228,7 +1228,7 @@ class Tankas:
         print("info")
         print(f"Atlikti suviai i Desine: {len(suviai_i_desine)}, Kaire: {len(suviai_i_kaire)}, Virsu: {len(suviai_i_virsu)}, Apacia: {len(suviai_i_apacia)}")
         print(f"ISVISO SUVIU: {len(suviai_i_desine)+len(suviai_i_kaire)+len(suviai_i_virsu)+len(suviai_i_apacia)}")
-        print(f"Jusu taskai: {taskai}")
+        print(f"Jusu taskai: {sum(taskai)}")
         for pozicija in gridas:
             if pozicija == "T":
                 print(f"Taikynio pozicija: {gridas.index(pozicija)}")
