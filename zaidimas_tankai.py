@@ -1326,7 +1326,7 @@ class Tankas:
 
 def taikinys():
     # x=int(input("iveskite taikynio pozicija"))
-    x = random.randint(18, 63)
+    x = random.randint(34, 39)
     gridas[x] = "T"
 
 
