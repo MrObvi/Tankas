@@ -1,10 +1,14 @@
 import random
 import time
 
+#Norejau spalvu tai isgooglinau kaip apsidaryt
+class bcolors:
+    OKBLUE = '\033[94m'
+    ENDC = '\033[0m'
+
 
 def spausdinam():
-    print(f"""
-
+    print(f"""{bcolors.OKBLUE}
     [{gridas[1]}][{gridas[2]}][{gridas[3]}][{gridas[4]}] | [{gridas[5]}][{gridas[6]}][{gridas[7]}][{gridas[8]}]
     [{gridas[9]}][{gridas[10]}][{gridas[11]}][{gridas[12]}] | [{gridas[13]}][{gridas[14]}][{gridas[15]}][{gridas[16]}]
     [{gridas[17]}][{gridas[18]}][{gridas[19]}][{gridas[20]}] | [{gridas[21]}][{gridas[22]}][{gridas[23]}][{gridas[24]}]
@@ -14,7 +18,7 @@ def spausdinam():
     [{gridas[41]}][{gridas[42]}][{gridas[43]}][{gridas[44]}] | [{gridas[45]}][{gridas[46]}][{gridas[47]}][{gridas[48]}]
     [{gridas[49]}][{gridas[50]}][{gridas[51]}][{gridas[52]}] | [{gridas[53]}][{gridas[54]}][{gridas[55]}][{gridas[56]}]
     [{gridas[57]}][{gridas[58]}][{gridas[59]}][{gridas[60]}] | [{gridas[61]}][{gridas[62]}][{gridas[63]}][{gridas[64]}]
-
+    {bcolors.ENDC}
     """)
 
 
@@ -38,7 +42,7 @@ def generatorius(iteravimui, objektas, objektas2):
 idxs = generatorius(gridas, "_", "T")
 visi = list(idxs)
 
-print(visi)
+# print(visi)
 
 suviai_i_virsu = []
 suviai_i_apacia = []
@@ -1343,20 +1347,23 @@ taikinys()
 spausdinam()
 
 while True:
-    judejimas = input("""Kur vaziuojam?, W - Virsun, S - Zemyn, A - Kairen, D - Desinen, Enter - Saudyti\n""")
+    judejimas = input("""Kur vaziuojam?, W - Virsun, S - Zemyn, A - Kairen, D - Desinen, Enter - Saudyti, i - informacija\n""")
     tankas = Tankas()
     if judejimas == "w":
         tankas.virsun()
-        tankas.info()
+
     if judejimas == "s":
         tankas.zemyn()
-        tankas.info()
+
     if judejimas == "a":
         tankas.kairen()
-        tankas.info()
+
     if judejimas == "d":
         tankas.desinen()
+
+    if judejimas == "i":
+
         tankas.info()
     if judejimas == "":
         tankas.suvis(taskai, pataike)
-        tankas.info()
+
