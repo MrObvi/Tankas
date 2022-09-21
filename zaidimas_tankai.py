@@ -1041,11 +1041,11 @@ class Tankas:
                 taikino_vieta = gridas.index("T")
 
                 suviai_i_kaire.append(1)
-                print("Saudo i kaire")
-                print(vieta)
-                print(taikino_vieta)
-                print(gridas[vieta])
-                print(gridas[taikino_vieta])
+                # print("Saudo i kaire")
+                # print(vieta)
+                # print(taikino_vieta)
+                # print(gridas[vieta])
+                # print(gridas[taikino_vieta])
 
                 # Pirma eile
                 if vieta < 10:
@@ -1245,7 +1245,7 @@ class Tankas:
                 suviai_i_apacia.append(1)
                 # Is pirmo i apacia
                 # i = 1
-                print(gridas[vieta])
+                # print(gridas[vieta])
                 while (vieta < 64):
                     if gridas[vieta] == "↓":
                         vieta += 8
@@ -1287,7 +1287,7 @@ class Tankas:
                 suviai_i_virsu.append(1)
                 # Is pirmo i apacia
                 # i = 1
-                print(gridas[vieta])
+                # print(gridas[vieta])
                 while (vieta < 64 and vieta > 0):
                     if gridas[vieta] == "↑":
                         vieta -= 8
@@ -1351,6 +1351,7 @@ taikinys()
 spausdinam()
 
 while True:
+    print(f"Jusu taskai: {sum(taskai)}")
     judejimas = input("""Kur vaziuojam?, W - Virsun, S - Zemyn, A - Kairen, D - Desinen, Enter - Saudyti, i - informacija\n""")
     tankas = Tankas()
     if judejimas == "w":
