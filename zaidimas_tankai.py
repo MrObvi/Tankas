@@ -1,13 +1,16 @@
 import random
 import time
+import os
 
-#Norejau spalvu tai isgooglinau kaip apsidaryt
+#Norejau spalvu tai isgooglinau kaip pasidaryt
 class bcolors:
     OKBLUE = '\033[94m'
     ENDC = '\033[0m'
 
 
+
 def spausdinam():
+    os.system('cls')
     print(f"""{bcolors.OKBLUE}
     [{gridas[1]}][{gridas[2]}][{gridas[3]}][{gridas[4]}] | [{gridas[5]}][{gridas[6]}][{gridas[7]}][{gridas[8]}]
     [{gridas[9]}][{gridas[10]}][{gridas[11]}][{gridas[12]}] | [{gridas[13]}][{gridas[14]}][{gridas[15]}][{gridas[16]}]
@@ -20,6 +23,7 @@ def spausdinam():
     [{gridas[57]}][{gridas[58]}][{gridas[59]}][{gridas[60]}] | [{gridas[61]}][{gridas[62]}][{gridas[63]}][{gridas[64]}]
     {bcolors.ENDC}
     """)
+
 
 
 gridas = ["_", "→", "_", "_", "_", "_", "_", "_", "_",
